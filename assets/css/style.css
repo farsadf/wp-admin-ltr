@@ -1,0 +1,80 @@
+#admin-ltr-wrap {
+    float: left;
+    height: 28px;
+    margin: 0 6px 0 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+}
+#admin-ltr {
+    border: 0;
+    background: 0 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #72777c;
+    line-height: 1.7;
+    padding: 3px 16px 3px 16px;
+}
+#admin-ltr:hover, #admin-ltr:focus, #admin-ltr:hover {
+    color: #32373c;
+    transform: none !important;
+}
+#admin-ltr-iframe-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#admin-ltr-iframe-wrap #admin-ltr-iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#admin-ltr-preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    display: none;
+}
+/* ADMIN PANEL */
+#admin-ltr-panel .page-content {
+    padding: 1rem;
+}
+#admin-ltr-panel .made-by-love {
+    width: 15px;
+    vertical-align: sub;
+    animation-name: heart_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#admin-ltr-panel .made-by-love.github {
+    animation-delay: 1s;
+}
+@keyframes heart_animation {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+        -o-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: admin-ltr\n"
+"POT-Creation-Date: 2016-12-02 19:54+0330\n"
+"PO-Revision-Date: 2016-12-03 00:23+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/adminpanel.registrar.php:13
+msgid "WP Admin LTR"
+msgstr "چپ چین ساز پنل"
+
+#: inc/adminpanel.registrar.php:18
+msgid "About Admin LTR"
+msgstr "درباره افزونه"
+
+#: inc/adminpanel.registrar.php:20
+msgid "With all of my love to the Persian community"
+msgstr "تقدیم با عشق به جامعه فارسی زبان"
+
+#: inc/adminpanel.registrar.php:21
+#, php-format
+msgid "Coded with %1$s to help the RTL community."
+msgstr ""
+"برنامه نویسی شده با %1$s برای کمک به جوامعی که از حالت راست چین استفاده می "
+"کنند."
+
+#: inc/adminpanel.registrar.php:23
+msgid "Please note, this plugin is completely free and open-source."
+msgstr ""
+"توجه داشته باشید این افزونه تماماً رایگان و متن باز است و شما می توانید در آن "
+"سهمی داشته باشید."
+
+#: inc/adminpanel.registrar.php:25
+#, php-format
+msgid ""
+"Fork it on %1$s at <a href=\"http://github.com/farsadf/wp-admin-ltr\">http://"
+"github.com/farsadf/wp-admin-ltr</a>"
+msgstr ""
+"در  %1$s به توسعه این افزونه کمک کنید. (<a href=\"http://github.com/farsadf/"
+"wp-admin-ltr\">http://github.com/farsadf/wp-admin-ltr</a>)"
+
+#: inc/adminpanel.registrar.php:32
+msgid "How to use?"
+msgstr "راهنمای استفاده"
+
+#: inc/adminpanel.registrar.php:34
+msgid ""
+"This plugin add a button called \"Force LTR\" to top of your WordPress "
+"dashboard. By clicking on it you'll notice that page changes a little bit "
+"after a while whole page become LTR"
+msgstr ""
+"این افزونه دکمه با عنوان \"چپ چین کن\" در بالای پنل مدیریت شما اضافه می کند "
+"که با کلیک کردن بر روی آن صفحهاتی که با حالت راستچین وردپرس مشکل دارند به "
+"راحتی نمایش داده شوند."
+
+#: inc/adminpanel.registrar.php:35
+msgid ""
+"<strong>Note:</strong> to deactivate \"Force LTR\" you must refresh the page."
+msgstr ""
+"<strong>توجه:</strong> جهت غیر فعال کردن حالت چپ چین باید صفحه مد نظر را "
+"دوباره بارگذاری کنید."
+
+#: inc/plugin_helpers.php:28
+msgid "Force LTR"
+msgstr "چپ چین کن"

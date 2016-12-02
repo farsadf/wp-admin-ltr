@@ -1,0 +1,7 @@
+html {
+    padding-top: 0 !important;
+    direction: ltr;
+}
+#wpcontent {
+    margin-left: 0 !important;
+}
