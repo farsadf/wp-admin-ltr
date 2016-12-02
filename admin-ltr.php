@@ -4,7 +4,6 @@ Plugin Name: WP Admin LTR
 Description: LTR-ize Plugin for plugins that not support RTL by default
 Version: 1.0
 Author: Farsad Fakhim
-Author URI: http://farsad.us
 Text Domain: admin-ltr
 Domain Path: /languages/
 */
