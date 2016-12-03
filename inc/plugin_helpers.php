@@ -34,3 +34,7 @@ function admin_ltr_header_hook() {
         wp_enqueue_style('ADMIN_LTR_GENERATOR_STYLE', get_asset_dir('css/iframe.css'));
     }
 }
+
+function admin_ltr_textdomain() {
+    load_plugin_textdomain( 'admin-ltr', false, dirname( ADMIN_LTR_BASENAME ) . '/languages/' );
+}
