@@ -1,36 +1,28 @@
-/**
- * Created by farsad on 12/2/2016.
- */
+window.jQuery ? ! function(e) {
+    function n(n, i) {
+        return e.isEmptyObject(i) || (n += (n.indexOf("?") > -1 ? "&" : "?") + e.param(i)), n
+    }
 
-if(window.jQuery) {
-    (function ($) {
-        function addParams(url, data) {
-            if ( ! $.isEmptyObject(data) )
-                url += (url.indexOf('?') > -1 ? '&' : '?') + $.param(data);
-
-            return url;
-        }
-
-        function sendMessage(message) {
-            parent.postMessage(JSON.stringify(message), window.location.href);
-        }
-
-        $(window).load(function() {
-            WPBody = $('#wpbody');
-            sendMessage({eventName: 'pageLoad', windowHeight: WPBody.height()});
-        });
-
-        $(document).ready(function() {
-            var WPBody = $('#wpbody'),
-                PageLinks = $('a');
-
-            WPBody.siblings().hide();
-            WPBody.parents().siblings().hide();
-
-            PageLinks.each(function() {
-                $(this).attr('href', addParams($(this).attr('href'), {'forceLTR': true}));
-            });
-        });
-    }(jQuery));
-} else
-    console.log('This plugin is jQuery depended.');
+    function i(e) {
+        parent.postMessage(JSON.stringify(e), window.location.href)
+    }
+    e(window).load(function() {
+        WPBody = e("#wpbody"), i({
+            eventName: "pageLoad",
+            windowHeight: WPBody.height()
+        })
+    }), e(document).ready(function() {
+        var t = e("#wpbody"),
+            o = e("a");
+        t.siblings().hide(), t.parents().siblings().hide(), o.each(function() {
+            e(this).attr("href", n(e(this).attr("href"), {
+                forceLTR: !0
+            }))
+        }), setInterval(function() {
+            i({
+                eventName: "pageDimensionsInterval",
+                height: e("#wpwrap").height()
+            })
+        }, 50)
+    })
+}(jQuery) : console.log("This plugin is jQuery depended.");
