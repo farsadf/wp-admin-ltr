@@ -31,7 +31,7 @@ function finalize()
                 <p>
                     ' . __( 'Please note, this plugin is completely free and open-source.', 'admin-ltr' ) . '
                     <br>
-                    ' . sprintf( __( 'Fork it on %1$s at <a href="http://github.com/farsadf/wp-admin-ltr">http://github.com/farsadf/wp-admin-ltr</a>' , 'admin-ltr'),  '<img src="' . get_asset_dir('imgs/github_icon.png') . '" class="made-by-love github"/>') . '
+                    ' . sprintf( __( 'Fork it on %1$s at <a href="http://github.com/wphelper/wp-admin-ltr">http://github.com/wphelper/wp-admin-ltr</a>' , 'admin-ltr'),  '<img src="' . get_asset_dir('imgs/github_icon.png') . '" class="made-by-love github"/>') . '
                 </p>
             ',
                 'default' => true

@@ -18,4 +18,4 @@ require_once(INCLUDE_PATH . 'adminpanel.registrar.php');
 add_action('admin_enqueue_scripts', 'admin_ltr_enqueue_global');
 add_action('admin_notices', 'admin_ltr_output');
 add_action('admin_init', 'admin_ltr_header_hook');
-add_action( 'plugins_loaded', 'admin_ltr_textdomain');
+add_action('plugins_loaded', 'admin_ltr_textdomain');
