@@ -1,6 +1,6 @@
 window.jQuery ? ! function(e) {
     function n(n, i) {
-        return e.isEmptyObject(i) || (n += (n.indexOf("?") > -1 ? "&" : "?") + e.param(i)), n
+        return e.isEmptyObject(i) || void 0 == n || (n += (n.indexOf("?") > -1 ? "&" : "?") + e.param(i)), n
     }
 
     function i(e) {

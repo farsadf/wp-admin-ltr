@@ -5,7 +5,7 @@
 if(window.jQuery) {
     (function ($) {
         function addParams(url, data) {
-            if ( ! $.isEmptyObject(data) )
+            if ( ! $.isEmptyObject(data) && url != undefined)
                 url += (url.indexOf('?') > -1 ? '&' : '?') + $.param(data);
 
             return url;

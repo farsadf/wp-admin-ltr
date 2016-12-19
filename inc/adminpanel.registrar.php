@@ -4,34 +4,34 @@
  * Date: 12/2/2016
  * Time: 5:42 PM
  */
-$adminPanel = new adminpanel();
+$admin_ltr_panel_instance = new admin_ltr_panel();
 
-function generate_page() {
-    global $adminPanel;
-    echo $adminPanel->generatePage();
+function admin_ltr_generate_page() {
+    global $admin_ltr_panel_instance;
+    echo $admin_ltr_panel_instance->generatePage();
 }
 
-function finalize()
+function admin_ltr_finalize()
 {
-    global $adminPanel;
+    global $admin_ltr_panel_instance;
 
-    $adminPanel->setPageAddressBase('tools.php');
-    $adminPanel->setPageAddress('admin-ltr');
-    $adminPanel->setPageId('admin-ltr-panel');
+    $admin_ltr_panel_instance->setPageAddressBase('tools.php');
+    $admin_ltr_panel_instance->setPageAddress('admin-ltr');
+    $admin_ltr_panel_instance->setPageId('admin-ltr-panel');
 
-    $adminPanel->setPageTitle( __( 'WP Admin LTR', 'admin-ltr' ) );
-    $adminPanel->setPageTabs(
+    $admin_ltr_panel_instance->setPageTitle( __( 'WP Admin LTR', 'admin-ltr' ) );
+    $admin_ltr_panel_instance->setPageTabs(
         array(
             array(
                 'id' => 'about_page',
                 'title' => __('About Admin LTR', 'admin-ltr'),
                 'content' => '
                 <strong>' . __('With all of my love to the Persian community', 'admin-ltr') . '</strong>
-                <p>' . sprintf( __( 'Coded with %1$s to help the RTL community.', 'admin-ltr' ), '<img src="'.get_asset_dir('imgs/heart_icon.png').'" class="made-by-love" />' ) . '</p>
+                <p>' . sprintf( __( 'Coded with %1$s to help the RTL community.', 'admin-ltr' ), '<img src="'.admin_ltr_get_asset_dir('imgs/heart_icon.png').'" class="made-by-love" />' ) . '</p>
                 <p>
                     ' . __( 'Please note, this plugin is completely free and open-source.', 'admin-ltr' ) . '
                     <br>
-                    ' . sprintf( __( 'Fork it on %1$s at <a href="http://github.com/wphelper/wp-admin-ltr">http://github.com/wphelper/wp-admin-ltr</a>' , 'admin-ltr'),  '<img src="' . get_asset_dir('imgs/github_icon.png') . '" class="made-by-love github"/>') . '
+                    ' . sprintf( __( 'Fork it on %1$s at <a href="http://github.com/wphelper/wp-admin-ltr">http://github.com/wphelper/wp-admin-ltr</a>' , 'admin-ltr'),  '<img src="' . admin_ltr_get_asset_dir('imgs/github_icon.png') . '" class="made-by-love github"/>') . '
                 </p>
             ',
                 'default' => true
@@ -47,6 +47,6 @@ function finalize()
         )
     );
 
-    add_submenu_page($adminPanel->getPageAddressBase(), $adminPanel->getPageTitle(), $adminPanel->getPageTitle(), 'read', $adminPanel->getPageAddress(), 'generate_page');
+    add_submenu_page($admin_ltr_panel_instance->getPageAddressBase(), $admin_ltr_panel_instance->getPageTitle(), $admin_ltr_panel_instance->getPageTitle(), 'read', $admin_ltr_panel_instance->getPageAddress(), 'admin_ltr_generate_page');
 }
-add_action('admin_menu', 'finalize');
+add_action('admin_menu', 'admin_ltr_finalize');

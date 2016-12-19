@@ -5,7 +5,7 @@
  * Date: 12/2/2016
  * Time: 2:38 PM
  */
-class adminpanel
+class admin_ltr_panel
 {
     #region Class Members
     private $page_id = 'admin-panel';

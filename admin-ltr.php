@@ -9,11 +9,11 @@ Domain Path: /languages/
 */
 define('ADMIN_LTR_FILE', __FILE__);
 define('ADMIN_LTR_BASENAME', plugin_basename(ADMIN_LTR_FILE));
-define('INCLUDE_PATH', plugin_dir_path(__FILE__) . 'inc/');
+define('ADMIN_LTR_PLUGINPATH', plugin_dir_path(__FILE__) . 'inc/');
 
-require_once(INCLUDE_PATH . 'plugin_helpers.php');
-require_once(INCLUDE_PATH . 'adminpanel.php');
-require_once(INCLUDE_PATH . 'adminpanel.registrar.php');
+require_once(ADMIN_LTR_PLUGINPATH . 'plugin_helpers.php');
+require_once(ADMIN_LTR_PLUGINPATH . 'admin_ltr_panel.php');
+require_once(ADMIN_LTR_PLUGINPATH . 'adminpanel.registrar.php');
 
 add_action('admin_enqueue_scripts', 'admin_ltr_enqueue_global');
 add_action('admin_notices', 'admin_ltr_output');
